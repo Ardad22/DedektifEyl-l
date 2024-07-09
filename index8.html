@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resim Değiştirme Sayfası</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            position: relative;
+        }
+        .back-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+        .content-image {
+            max-width: 80%;
+            max-height: 80%;
+            margin-bottom: 20px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .button:hover {
+            background-color: #218838;
+        }
+    </style>
+    <script>
+        function changeImage(imageSrc) {
+            document.getElementById('main-image').src = imageSrc;
+        }
+    </script>
+</head>
+<body>
+    <a href="index.html" class="back-button">Geri Dön</a>
+    <img id="main-image" src="images/1.jpg" alt="Ana Resim" class="content-image">
+    <div class="button-container">
+        <button class="button" onclick="changeImage('images/16.jpeg')">Olay gecesi saat 23.00'te neredeydiniz?</button>
+        <button class="button" onclick="changeImage('images/17.jpeg')">Ahmet Kayayı tanır mısınız?</button>
+        <button class="button" onclick="changeImage('images/18.jpeg')">Son zamanlarda Ahmet Beyle ilgili garip bir şey fark ettiniz mi?</button>
+    </div>
+</body>
+</html>

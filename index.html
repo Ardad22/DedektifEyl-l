@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Sayfası</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: white; /* Arka plan ile kontrast sağlamak için yazı rengini beyaz yapalım */
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: rgba(0, 123, 255, 0.8); /* Arka planı biraz şeffaf yapalım */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .button:hover {
+            background-color: rgba(0, 86, 179, 0.8);
+        }
+        .note-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: rgba(40, 167, 69, 0.8); /* Arka planı biraz şeffaf yapalım */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .note-button:hover {
+            background-color: rgba(33, 136, 56, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <a href="index2.html" class="button">Olay</a>
+        <a href="index3.html" class="button">İpuçları</a>
+        <a href="index4.html" class="button">Ayşe'yi Sorgula</a>
+        <a href="index5.html" class="button">Mehmet'i Sorgula</a>
+        <a href="index6.html" class="button">Elif'i Sorgula</a>
+        <a href="index7.html" class="button">Murat'ı Sorgula</a>
+        <a href="index8.html" class="button">Selin'i Sorgula</a>
+    </div>
+    <a href="index9.html" class="note-button">Arda'dan Not</a>
+</body>
+</html>
